@@ -1,3 +1,6 @@
+/* ----------------------------------------
+   Container Principale e Layout
+---------------------------------------- */
 .social-container {
     width: 75%;
     margin: 10vh auto;
@@ -22,6 +25,9 @@
     justify-content: center;
 }
 
+/* ----------------------------------------
+   Link e Icone - Stili Base
+---------------------------------------- */
 .social-icons a {
     width: 100%;
     height: 100%;
@@ -50,44 +56,172 @@
     transition: transform 265ms ease-out;
 }
 
+/* ----------------------------------------
+   Effetti Hover
+---------------------------------------- */
+/* Background cerchio scompare */
 .social-icons a:hover:before {
     transform: scale(0);
 }
 
+/* Icona ingrandita */
 .social-icons a:hover i {
     transform: scale(2.2);
 }
 
-/* Background colors */
-#instagram a:before { background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4); }
-#github a:before { background: black; }
-#youtube a:before { background: red; }
-#discord a:before { background: #5865F2; }
+/* ----------------------------------------
+   Background specifici per ogni social
+---------------------------------------- */
+#instagram a:before {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
 
-#facebook a:before { background: #3b5998; }
-#twitter a:before { background: #1da1f2; }
-#linkedin a:before { background: #0077b5; }
-#tiktok a:before { background: black; }
-#snapchat a:before { background: #fffc00; }
-#pinterest a:before { background: #bd081c; }
-#reddit a:before { background: #ff4500; }
-#telegram a:before { background: #0088cc; }
-#medium a:before { background: black; }
-#twitch a:before { background: #9146ff; }
+#youtube a:before {
+    background: #ff0000;
+}
 
-/* Hover icon colors */
-#instagram a:hover i { background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-#github a:hover i { background: black; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-#youtube a:hover i { background: red; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-#discord a:hover i { background: #5865F2; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+#discord a:before {
+    background: #5865F2;
+}
 
-#facebook a:hover i { background: #3b5998; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-#twitter a:hover i { background: #1da1f2; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-#linkedin a:hover i { background: #0077b5; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-#tiktok a:hover i { background: black; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-#snapchat a:hover i { background: #fffc00; -webkit-background-clip: text; -webkit-text-fill-color: transparent; color: black; }
-#pinterest a:hover i { background: #bd081c; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-#reddit a:hover i { background: #ff4500; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-#telegram a:hover i { background: #0088cc; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-#medium a:hover i { background: black; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-#twitch a:hover i { background: #9146ff; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+#github a:before {
+    background: #000000;
+}
+
+#facebook a:before {
+    background: #3b5998;
+}
+
+#twitter a:before {
+    background: #1da1f2;
+}
+
+#linkedin a:before {
+    background: #0077b5;
+}
+
+#tiktok a:before {
+    background: #000000;
+}
+
+#snapchat a:before {
+    background: #fffc00;
+}
+
+#pinterest a:before {
+    background: #bd081c;
+}
+
+#reddit a:before {
+    background: #ff4500;
+}
+
+#telegram a:before {
+    background: #0088cc;
+}
+
+#medium a:before {
+    background: #000000;
+}
+
+#twitch a:before {
+    background: #9146ff;
+}
+
+#threads a:before {
+    background: #000000;
+}
+
+/* ----------------------------------------
+   Hover: colore icona con effetto clip
+---------------------------------------- */
+#instagram a:hover i {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#youtube a:hover i {
+    background: #ff0000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#discord a:hover i {
+    background: #5865F2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#github a:hover i {
+    background: #000000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#facebook a:hover i {
+    background: #3b5998;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#twitter a:hover i {
+    background: #1da1f2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#linkedin a:hover i {
+    background: #0077b5;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#tiktok a:hover i {
+    background: #000000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#snapchat a:hover i {
+    background: #fffc00;
+    color: #000000; /* testo nero rimane */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#pinterest a:hover i {
+    background: #bd081c;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#reddit a:hover i {
+    background: #ff4500;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#telegram a:hover i {
+    background: #0088cc;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#medium a:hover i {
+    background: #000000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#twitch a:hover i {
+    background: #9146ff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#threads a:hover i {
+    background: #000000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
