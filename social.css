@@ -225,3 +225,23 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+/* ----------------------------------------
+   Modalità Scura - Override colori icone nere
+---------------------------------------- */
+body.dark-mode #github a i,
+body.dark-mode #tiktok a i,
+body.dark-mode #medium a i,
+body.dark-mode #threads a i {
+    color: white;
+    -webkit-text-fill-color: white;
+    background: none;
+}
+
+body.dark-mode #github a:hover i,
+body.dark-mode #tiktok a:hover i,
+body.dark-mode #medium a:hover i,
+body.dark-mode #threads a:hover i {
+    background: none;
+    color: white;
+    -webkit-text-fill-color: white;
+}
