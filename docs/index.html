@@ -5,27 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Social Icons Demo</title>
 
-  <!-- Font Awesome CDN: icone social -->
+  <!-- Font Awesome -->
   <link 
     rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
   />
 
-  <!-- CSS Personalizzato -->
+  <!-- CSS esterno icone -->
   <link href="https://cdn.jsdelivr.net/gh/PredestinatoNew/Social_HTML/social.css" rel="stylesheet" />
+
+  <!-- Tema chiaro/scuro -->
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+    }
+
+    body.dark-mode {
+      --bg-color: #121212;
+      --text-color: #f0f0f0;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+      font-family: sans-serif;
+    }
+
+    .social-container {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .theme-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: 2px solid var(--text-color);
+      color: var(--text-color);
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .theme-toggle:hover {
+      background-color: var(--text-color);
+      color: var(--bg-color);
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Container principale social -->
+  <!-- Bottone per cambiare tema -->
+  <button class="theme-toggle" onclick="toggleTheme()">🌙 Modalità Scura</button>
+
   <div class="social-container">
+    <p class="lead">Per restare aggiornato sullo sviluppo seguici sui social</p>
 
-    <!-- Testo introduttivo -->
-    <p class="lead">
-      Per restare aggiornato sullo sviluppo seguici sui social
-    </p>
-
-    <!-- Lista icone social -->
     <ul class="social-icons">
+      <!-- Esempio di icona -->
       <li id="instagram">
         <a href="https://www.instagram.com/YOUR_ID/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <i class="fab fa-instagram"></i>
@@ -104,5 +145,20 @@
     </ul>
   </div>
 
+  <!-- Script per attivare dark/light mode -->
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const button = document.querySelector('.theme-toggle');
+
+      body.classList.toggle('dark-mode');
+
+      if (body.classList.contains('dark-mode')) {
+        button.textContent = '☀️ Modalità Chiara';
+      } else {
+        button.textContent = '🌙 Modalità Scura';
+      }
+    }
+  </script>
 </body>
 </html>
