@@ -39,13 +39,15 @@
 }
 
 .social-icons a:before {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    z-index: 1;
-    transition: transform 265ms ease-out;
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: var(--circle-color, #555);
+  transition: transform 265ms ease-out;
+  transform: var(--circle-transform, scale(1));
 }
 
 .social-icons i {
