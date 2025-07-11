@@ -1,36 +1,37 @@
 # 🌐 Social Icons Hover Effect
 
-Un set moderno e reattivo di **icone social animate** con effetti `hover`, colori personalizzati per ogni piattaforma e supporto alla **modalità scura**. Ideale per portfolio, landing page, blog e siti personali.
+Un set moderno e reattivo di **icone social animate**, con effetti `hover`, colori personalizzati per ogni piattaforma e supporto alla **modalità scura**.  
+Perfetto per portfolio, landing page, blog e siti personali.
 
 ---
 
 ## 🔗 Demo Live
 
-👉 [Visualizza la demo su GitHub Pages](https://your-username.github.io/repo-name/)
-
-> Il file `docs/index.html` contiene un esempio completo già funzionante, usato anche come demo tramite GitHub Pages.
+👉 **[Visualizza la demo su GitHub Pages](https://your-username.github.io/repo-name/)**  
+> Il file `docs/index.html` è un esempio completo già funzionante, usato anche come demo.
 
 ---
 
 ## ✨ Caratteristiche principali
 
-- Layout flessibile con **Flexbox**
-- Icone animate con effetto zoom al passaggio del mouse
-- Cerchio colorato con transizione fluida
-- Gradienti e colori personalizzati per ogni social network
-- Supporto alla **modalità scura** per sfondi scuri
-- Accessibilità migliorata con `aria-label`
-- Solo HTML + CSS (nessuna dipendenza da JavaScript)
+- ✅ Layout flessibile con **Flexbox**  
+- 🔍 Icone animate con effetto **zoom** al passaggio del mouse  
+- 🎨 Cerchio colorato con transizione fluida  
+- 🌈 Gradienti e colori personalizzati per ogni social network  
+- 🌚 Supporto alla **modalità scura**  
+- ♿ Migliorata **accessibilità** con `aria-label`  
+- 💡 Solo **HTML + CSS** – nessuna dipendenza da JavaScript
 
 ---
 
 ## 📁 Struttura del repository
 
-Il progetto include:
-
-- `social.css`: foglio di stile principale con animazioni e temi
-- `docs/index.html`: esempio completo di utilizzo
-- `README.md`: questo file
+```plaintext
+├── docs/
+│   └── index.html        # Esempio completo (usato per GitHub Pages)
+├── social.css            # Foglio di stile principale
+└── README.md             # Questo file
+```
 
 ---
 
@@ -40,70 +41,80 @@ Il progetto include:
 
 ```html
 <link href="https://cdn.jsdelivr.net/gh/your-username/repo-name/social.css" rel="stylesheet" />
-2. Aggiungi Font Awesome
+```
 
+### 2. Aggiungi Font Awesome
+
+```html
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+```
 
-3. Inserisci le icone nel tuo HTML
+### 3. Inserisci le icone nel tuo HTML
 
+```html
 <ul class="social-icons">
   <li id="github">
     <a href="https://github.com/TUO_USERNAME" target="_blank" aria-label="GitHub">
       <i class="fab fa-github"></i>
     </a>
   </li>
+  <!-- Aggiungi altri social duplicando questo blocco -->
 </ul>
+```
 
-    Aggiungi altri social duplicando il blocco <li>.
+---
 
-🌗 Modalità Scura
+## 🌗 Modalità Scura
 
-Aggiungi la classe dark-mode al tag <body>:
+Per attivare la modalità scura, aggiungi la classe `dark-mode` al tag `<body>`:
 
+```html
 <body class="dark-mode">
+```
 
-Un pulsante per cambiare tema è incluso nella demo (docs/index.html).
-📌 Social supportati
+🔁 Un pulsante per attivare/disattivare il tema è già incluso nella demo (`docs/index.html`).
 
-Stili predefiniti per:
+---
 
-    Instagram
+## 📌 Social supportati
 
-    YouTube
+Il tema supporta i seguenti social con stili personalizzati:
 
-    Discord
+- Instagram  
+- YouTube  
+- Discord  
+- GitHub  
+- Facebook  
+- Twitter (X)  
+- LinkedIn  
+- TikTok  
+- Snapchat  
+- Pinterest  
+- Reddit  
+- Telegram  
+- Medium  
+- Twitch  
+- Threads
 
-    GitHub
+---
 
-    Facebook
+## 📄 Licenza
 
-    Twitter (X)
+Distribuito sotto licenza **MIT**.  
+✔️ Puoi usarlo, modificarlo e integrarlo anche in progetti **commerciali**.
 
-    LinkedIn
+---
 
-    TikTok
+## 🙌 Contribuzioni
 
-    Snapchat
+Le contribuzioni sono **benvenute**!  
+Se vuoi aiutare a migliorare il progetto:
 
-    Pinterest
+- Apri una **Pull Request**  
+- Oppure segnala un **Issue**
 
-    Reddit
+---
 
-    Telegram
+## 👤 Creato da
 
-    Medium
-
-    Twitch
-
-    Threads
-
-📄 Licenza
-
-Distribuito sotto licenza MIT.
-Puoi usarlo e modificarlo anche in progetti commerciali.
-🙌 Contribuzioni
-
-Le contribuzioni sono benvenute!
-Apri una pull request o segnala un problema.
-
-👤 Creato da PredestinatoNew
+**PredestinatoNew**
