@@ -100,8 +100,7 @@ Il tema supporta i seguenti social con stili personalizzati:
 
 ## 📄 Licenza
 
-Distribuito sotto licenza **MIT**.  
-✔️ Puoi usarlo, modificarlo e integrarlo anche in progetti **commerciali**.
+Sei libero di usarlo citando almeno nel codice "Codice di PredestinatoNew" accanto all'importazione del CSS ma è anche apprezzata l'attribuzione nela pagina frontend
 
 ---
 
