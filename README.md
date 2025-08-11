@@ -40,7 +40,7 @@ Perfetto per portfolio, landing page, blog e siti personali.
 ### 1. Includi il foglio di stile
 
 ```html
-<link href="https://cdn.jsdelivr.net/gh/your-username/repo-name/social.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/gh/PredestinatoNew/Social_HTML/social.css" rel="stylesheet" />
 ```
 
 ### 2. Aggiungi Font Awesome
@@ -54,7 +54,7 @@ Perfetto per portfolio, landing page, blog e siti personali.
 ```html
 <ul class="social-icons">
   <li id="github">
-    <a href="https://github.com/TUO_USERNAME" target="_blank" aria-label="GitHub">
+    <a href="https://www.github.com/YOUR_ID/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
       <i class="fab fa-github"></i>
     </a>
   </li>
