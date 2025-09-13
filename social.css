@@ -245,3 +245,22 @@ body.dark-mode #threads a:hover i {
     color: white;
     -webkit-text-fill-color: white;
 }
+
+
+dark-mode #github a i,
+dark-mode #tiktok a i,
+dark-mode #medium a i,
+dark-mode #threads a i {
+    color: white;
+    -webkit-text-fill-color: white;
+    background: none;
+}
+
+dark-mode #github a:hover i,
+dark-mode #tiktok a:hover i,
+dark-mode #medium a:hover i,
+dark-mode #threads a:hover i {
+    background: none;
+    color: white;
+    -webkit-text-fill-color: white;
+}
