@@ -7,7 +7,7 @@ Perfetto per portfolio, landing page, blog e siti personali.
 
 ## 🔗 Demo Live
 
-👉 **[Visualizza la demo su GitHub Pages](https://your-username.github.io/repo-name/)**  
+👉 **[Visualizza la demo su GitHub Pages](https://predestinatonew.github.io/Social_HTML/)**  
 > Il file `docs/index.html` è un esempio completo già funzionante, usato anche come demo.
 
 ---
